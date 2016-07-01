@@ -223,6 +223,10 @@ module.exports = function(grunt) {
                 src: '<%= meta.distPath %>css/<%= pkg.name %>.css',
                 dest: '<%= meta.distPath %>css/<%= pkg.name %>.min.css'
             },
+            swipeout: {
+                src: '<%= meta.distPath %>css/<%= pkg.name %>-swipeout.css',
+                dest: '<%= meta.distPath %>css/<%= pkg.name %>-swipeout.min.css'
+            },
             swiper: {
                 src: '<%= meta.distPath %>css/<%= pkg.name %>-swiper.css',
                 dest: '<%= meta.distPath %>css/<%= pkg.name %>-swiper.min.css'
@@ -248,6 +252,10 @@ module.exports = function(grunt) {
             light7: {
                 src: '<%= concat.light7.dest %>',
                 dest: '<%= meta.distPath %>js/<%= pkg.name %>.min.js'
+            },
+            swipeout: {
+                src: '<%= concat.swipeout.dest %>',
+                dest: '<%= meta.distPath %>js/<%= pkg.name %>-swipeout.min.js'
             },
             swiper: {
                 src: '<%= concat.swiper.dest %>',
